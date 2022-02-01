@@ -1,0 +1,482 @@
+// @import "cssrest.scss";
+@import "cssreset";
+// Generalcss  start here 
+*{
+    margin-top: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    p{
+        font-size: 1.4rem;
+    }
+    a{
+        font-size: 1.6rem;
+   
+    }
+    line-height: 1.3;
+}
+// Colors palatte for  the project 
+$primary :#FC683E;
+$secondary :#F5E3D7;
+$tertiary :#ECAF4E;
+$black :#161616;
+h1{
+    font-size: 3.6rem;
+
+}
+h2{
+    font-size: 2.4rem;
+    font-size: 500;
+}
+h3{
+    font-size: 2rem;
+    font-weight: 500;
+}
+h5{
+    font-size: 2rem;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+}
+i{
+    font-size: 2.5rem;
+}
+
+.flex{
+    display: flex;
+    justify-content:space-between;
+    align-items:center ;
+}
+
+.btn{
+    padding: .8rem 3.2rem;
+    outline: none;
+    border-radius: 3rem;
+    border: .3rem solid $black;
+    background: transparent;
+}
+
+figure{
+    width: 100%;
+    height: 100%;
+    img{
+        width: 100%;
+        object-fit: cover;
+        height: 100%;
+    }
+}
+// header styling start here 
+
+.header{
+    width: 100%;
+    position: absolute;
+    padding: 2rem 11%;
+    .container{
+        width: 100%;
+    }
+    .logo{
+        font-weight: 500;
+        font-size: 2.4rem;
+        color: $black;
+    }
+    
+}
+
+.navigation-menus{
+    a{
+        margin-left:1.5rem;
+        color:rgba(0,0,0,0.7);
+    }
+}
+.hamburg-container , .hide-menu{
+    display: none;
+}
+// header section ends here 
+
+// main section start from here 
+
+// hero section start here 
+#hero{
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-columns:repeat(2,1fr);
+    background: $secondary;
+    .hero-banner{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .hero-content{
+        place-self: center;
+        padding: 0 2rem;
+        h1{
+            margin: 2rem 0 ;
+        }
+        span{
+            font-weight: 600;
+        }
+        p{
+            margin-bottom: 2rem;
+            color:rgba(0,0,0,0.7);
+        }
+        h5{
+            font-size: 1.2rem;
+            color:rgba(0,0,0,0.7);
+            letter-spacing: .2rem;
+        }
+    }
+}
+// hero section ends  here 
+
+
+// my skill section start here section(2)
+#my-skills{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    article{
+        padding: 2rem;
+        a{
+            margin: 2rem 0 ;
+            color: $tertiary;
+        }
+    }
+    .container{
+        background: $tertiary;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    figure{
+        height: 100%;
+        img{
+            background-position: cneter;
+            height: 100%;
+        }
+    }
+}
+.progress-bar-container{
+    padding: 2rem;
+
+    .progress-bar{
+        margin-top: 1rem;
+    }
+    .progress-text{
+        display: flex;
+        justify-content: space-between;
+    }
+    progress{
+        width: 100%;
+    }
+}
+// my skill section  ends here  section(2)
+
+// cards container section start here 
+#cards-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    .card{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 2rem 4rem;
+        align-items: center;
+        color: #fff;
+        h5{
+            margin: 2rem;
+        }
+        i{
+            font-size: 3rem;
+        }
+    }
+    .card-1{
+        background: $tertiary;
+    }
+    .card-2{
+        background: $primary;
+    }
+    .card-3{
+        background: $black;
+    }
+    .card-4{
+        background: #fff;
+        color: rgba(0,0,0,0.7);
+    }
+}
+// cards contianer section ends here 
+
+// portfolio section start here 
+.portfolio{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    .image-container{
+        width: 100%;
+        height: 100%;
+        background: red;
+        img{
+            object-fit: cover;
+        }
+    }
+    .introductry-text{
+        background: $primary;
+        padding: 4rem;
+        color: #fff;
+        span{
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: $black;
+        }
+    }
+    .card-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top:2rem;
+    }
+    .card{
+        display: block;
+    }
+    i{
+        margin-right:2rem ;
+    }
+}
+// portfoli section ends here 
+
+// portfolio-2 section start here 
+.portfolio-2{
+    header
+    {
+        color: #fff;
+    }
+    .introductry-text{
+        background: $tertiary;
+    }
+}
+// portfolio-2 section ends here 
+
+// contact section start here 
+#contact{
+    background: $primary;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    header{
+        color: #fff;
+        padding: 2rem 4rem;
+    }
+    .container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .address-container{
+        background: $black;
+        padding: 2rem;
+        color: #fff;
+        h3{
+            margin-bottom: 1rem;
+        }
+        
+    }
+
+    .contact-details{
+        margin-top: 1rem;
+        i{
+            font-size: 1.5rem;
+            margin-right:.5rem;
+        }
+        address{
+            margin: 1rem 0;
+        }
+        a{
+            color: $secondary;
+        }
+    }
+}
+form{
+    padding: 4rem;
+    display: flex;
+    flex-direction: column;
+    
+    input{
+        padding: 1rem 0 ;
+        border: none;
+        border-bottom: .1rem solid $tertiary;
+        outline: none;
+        background: transparent;
+        &::placeholder{
+            color: #fff;
+        }
+    }
+  
+    textarea{
+        border: none;
+        outline: none;
+        border-bottom:.1rem solid $tertiary ;
+        background: transparent;
+        &::placeholder{
+            color: #fff;
+        }
+    }
+    .btn{
+        align-self: flex-start;
+        margin-top:2rem;
+        padding: .8rem 7rem;
+        background: #fff;
+        border: none;
+    }
+}
+
+// contact section ends here ]
+
+// map section start from here 
+#map-container{
+    position: relative;
+    background: $primary;
+    width: 100%;
+    display: grid;
+    padding: 2rem  0 ;
+    place-content: center;
+    place-items: center;
+    figure{
+        iframe{
+            width: 60vw;
+            height: 40vh;
+        }
+    }
+}
+
+// footer start here 
+footer{
+    display: grid;
+    padding: 6% 2%;
+    place-content: center;
+    small{
+        font-size: 1.5rem;
+        a{
+            font-size: 1.5rem;
+            color: $primary;
+        }
+    }
+    .social-icon-container{
+        display: grid;
+        place-content: center;
+        i{
+            font-size:2rem;
+            margin-top:2rem;
+            color:grey;
+            margin-left: 1.5rem;
+        }
+    }
+}
+// footer ends here 
+// map section ends here 
+// Responsiveness of the webpage start here 
+
+@media screen and (max-width:768px){
+    // header styling starts  here
+    html{
+        font-size: 55%;
+    }  
+    .header {
+        position: relative;
+        padding: 0;
+        .container{
+            display: flex;
+            flex-direction: row;
+            padding: 2rem;
+            border-bottom: .1rem #D5E5E5;
+        }
+        ul{
+           a{
+            color: #fff;
+           }
+        }
+        .hamburg-container{
+            display: inline-block;
+        }
+        nav{
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100vh;
+            background: $primary;
+            z-index: 111;
+            display: none;
+           
+        } 
+        ul{
+            flex-direction: column;
+            a{
+                margin: 2rem 0;
+            }
+        }
+        input[type = 'checkbox']:checked ~ nav{
+            display: inline-block;
+        }
+    }
+
+    // multiple class used in differnet section 
+    .container{
+        grid-template-columns: 1fr;
+    }
+    // header styling ends here 
+
+    // Hero section responsive styling start here 
+    #hero{
+        grid-template-columns: 1fr;
+        
+    }
+    //Hero section responsive styling ends here 
+
+    // my-skill section start here 
+    #my-skills{
+        grid-template-columns:1fr;
+        .container{
+            grid-template-columns: 1fr;
+        }
+    }
+    // my skill section ends here 
+    // card section start here 
+    #cards-container{
+        grid-template-columns: 1fr;
+    }
+    // card section ends here 
+
+    // portfolio section start here 
+    .portfolio{
+        grid-template-columns: 1fr;
+    }
+    // portfolio section ends here 
+
+    // contact section start here 
+    #contact{
+        grid-template-columns: 1fr;
+        .container{
+            grid-template-columns: 1fr;
+        }
+    }
+    // contact section ends here 
+
+    // map section start here 
+    #map-container{
+        iframe
+        {
+            width: 90vw;
+        }
+    }
+    // map section ends here 
+}
