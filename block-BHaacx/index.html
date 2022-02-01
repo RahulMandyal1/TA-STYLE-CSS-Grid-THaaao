@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stimulus website</title>
+    <!-- External css link  -->
+    <link rel="stylesheet" href="assets/sytlesheets/style.css">
+    <!-- font aweosme cnd link  -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container flex">
+            <a  class="logo" href="#">Stimulus</a>
+            <!-- for the responsive navgation menus this checkbox used  -->
+            <label for="show-menu" id="show-nav-menus">
+                 <div class="hamburg-container">
+                    <i class="fas fa-bars" id="click-btn" class="check"></i>
+                </div>
+           </label>
+           <input type="checkbox" id="show-menu"  class="hide-menu" role="button"/>
+               <nav class="navigation-menus">
+                   <ul class="flex">
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">About Me</a></li>
+                       <li><a href="#">Experiences</a></li>
+                       <li><a href="#">Testimonial</a></li>
+                       <li><a href="#">Contact</a></li>
+                   </ul>
+               </nav>
+        </div>
+    </header>
+    <main>
+        <!-- hero section start here  -->
+        <section id="hero">
+            <figure class="hero-banner">
+                <img src="assets/media/home-img.jpg" alt="user image">
+            </figure>
+            <div class="hero-content">
+                <header>
+                    <h5 class="user-welcome-text"> Welcome to my website </h5>
+                    <h1>Hello, I am <span> Stimulus </span>Currently based in New York city</h1>
+                </header>
+                <div class="introduction-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, perspiciatis? Animi in, aut aliquid ut saepe adipisci aperiam reiciendis illo, provident inventore harum nulla repellendus quia aliquam iste doloremque impedit! 
+                    </p>
+                    <button class="btn">Get Started</button>
+                </div>
+            </div>
+        </section>
+        <!-- hero section ends here  -->
+        <!-- My skill section start here  -->
+        <section id="my-skills">
+            <article class="introductry-text">
+                <h2>Donec auctor</h2>
+                <a href="#" class="category">my-skills</a>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, perspiciatis? Animi in, aut aliquid ut saepe adipisci aperiam reiciendis! 
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, perspiciatis? Animi in, aut aliquid ut saepe adipisci aperiam reiciendis illo! 
+                </p>
+            </article>
+            <div class="container">
+                <figure class="user-image">
+                    <img src="assets/media/about-img.jpg" alt="user-image">
+                </figure>
+                <div class="progress-bar-container">
+                    <h2>My Skills</h2>
+                    <p>Photoshop , HTML CSS JS , Web Site</p>
+                    <div class="progress-bar">
+                        <div class="progress-text">
+                            <p>Frontend Design</p>
+                            <p>90%</p>
+                        </div>
+                         <!--HTML progress tag starts here-->
+                        <progress value="90" max="100">
+                        </progress>
+                        <!--HTML progress tag ends here-->
+                        <div class="progress-text">
+                            <p>Backend processing</p>
+                            <p>80%</p>
+                        </div>
+                         <!--HTML progress tag starts here-->
+                         <progress value="80" max="100">
+                        </progress>
+                        <!--HTML progress tag ends here-->
+                        <div class="progress-text">
+                            <p>Html & Css</p>
+                            <p>70%</p>
+                        </div>
+                         <!--HTML progress tag starts here-->
+                         <progress value="70" max="100">
+                        </progress>
+                        <!--HTML progress tag ends here-->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- MY skill section ends here  -->
+        <!-- card section start here  -->
+        <section id="cards-container" class="container">
+            <div class="card card-1">
+                <i class="fas fa-laptop"></i>
+                <h5>Interface Design</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloribus perspiciatis quibusdam officiis quaerat quis non sunt corporis reprehenderit reiciendis.
+                </p>
+            </div>
+            <div class="card card-2">
+                <i class="fab fa-telegram-plane"></i>
+                <h5>Media strategy</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloribus perspiciatis quibusdam officiis quaerat quis non sunt corporis reprehenderit reiciendis.
+                </p>
+            </div>
+            <div class="card card-3">
+                <i class="fas fa-mobile-alt"></i>
+                <h5>Mobile App</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloribus perspiciatis quibusdam officiis quaerat quis non sunt corporis reprehenderit reiciendis.
+                </p>
+            </div>
+            <div class="card card-4">
+                <i class="fab fa-html5"></i>
+                <h5>Coding</h5>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta doloribus perspiciatis quibusdam officiis quaerat quis non sunt corporis reprehenderit reiciendis.
+                </p>
+            </div>
+        </section>
+        <!-- card section ends here  -->
+        <!-- portfolio section start here  -->
+        <section class="portfolio">
+            <figure class="image-container">
+                <img src="assets/media/experience-img.jpg" alt="my experieces">
+            </figure>
+            <div class="introductry-text">
+                <h2>My Experiences</h2>
+                <p>Previous compaines and my task</p>
+                <div class="card-container">
+                    <i class="fas fa-laptop"></i>
+                    <div class="card">
+                        <h5>Graphic Designer <span>2014 july - 2017 sept</span> </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nam. Quis ducimus quo necessitatibus dolor.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <i class="fas fa-laptop"></i>
+                    <div class="card">
+                        <h5>Web Designer <span>2017 oct - 2019 nov</span> </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nam. Quis ducimus quo necessitatibus dolor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- portfolio section ends here  -->
+        <!-- portfiol section start here  -->
+        <section class="portfolio portfolio-2" >
+            <div class="introductry-text">
+                <h2>My Education</h2>
+                <p>Previous compaines and my task</p>
+                <div class="card-container">
+                    <i class="fas fa-laptop"></i>
+                    <div class="card">
+                        <h5>Master in Deign <span>2012 jan - 2014 may</span> </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nam. Quis ducimus quo necessitatibus dolor.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <i class="fas fa-laptop"></i>
+                    <div class="card">
+                        <h5>Bechlor of Arts <span>2008 oct - 2012 jan</span> </h5>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, nam. Quis ducimus quo necessitatibus dolor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <figure class="image-container">
+                <img src="assets/media/education-img.jpg" alt="my experieces">
+            </figure>
+        </section>
+        <!-- portfolio section ends here  -->
+        <!-- contact section start here  -->
+        <section id="contact">
+            <div class="from-container">
+                <header>
+                    <h2>Say Hello.</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    </p>
+                </header>
+                <form action="#">
+                    <input type="text" name="name" id="name" placeholder="Your Name">
+                    <input type="email" name="email" id="mail" placeholder="Your Email">
+                    <textarea 
+                    name="message" 
+                    id="mesage-box"
+                     cols="30"
+                     rows="6"
+                     placeholder=" Write Your Message">
+                     </textarea>
+                     <button class="btn">Send</button>
+                </form>
+            </div>
+            <div class="container">
+                <figure>
+                    <img src="assets/media/home-img.jpg" alt="user-image">
+                </figure>
+                <div class="address-container">
+                    <h3>Visit My Office</h3>
+                    <address>
+                        <small>456 chtori galli New Delhi</small>
+                    </address>
+                    <div class="contact-details">
+                        <h3>Contact</h3>
+                        <address>
+                            <i class="fas fa-phone"></i>
+                            <a href="#">987654322</a>
+                        </address>
+                        <address>
+                            <i class="fas fa-envelope"></i>
+                            <a href="#">@infouser@gmail.com</a>
+                        </address>
+                        <address>
+                            <i class="fas fa-globe-europe"></i>
+                            <a href="#">userAK.com</a>
+                        </address>
+                       
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- contact section ends here   -->
+        <!-- map section start here  -->
+        <section id="map-container">
+            <figure>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3375.8862924509967!2d76.35322021501415!3d32.20729448114779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391b530e24726e0d%3A0x71ff0cae0784712d!2sAltCampus%20Services%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1643731055380!5m2!1sen!2sin" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </figure>
+        </section>
+        <!-- map section ends here  -->
+    </main>
+    <footer>
+        <div class="copyright-container">
+            <small>
+               Copyright &copy; 2016 Your Company | Design <a href="#">template Mo</a>
+            </small>
+            <div class="social-icon-container">
+                <nav>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fas fa-basketball-ball"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </nav>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
