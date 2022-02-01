@@ -1,0 +1,166 @@
+// @import'cssrest';
+@import "cssreset.scss";
+
+// general css start here 
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    font-size: 1.6rem;
+}
+
+// colors palette for the project 
+$primary : #0095BE;
+$secondary : #FC2E1B;
+
+section{
+    width: 100%;
+    padding: 4% 11%;
+    min-height:100vh ;
+    background: #3A4A4F;
+    header{
+        width: 100%;
+        background: #fff;
+        padding: 1rem  0 ;
+        border-top: .3rem solid $primary;
+        ul{
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+h1{
+    text-align: center;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+    margin: 0 0 2rem 0 ;
+}
+
+a{
+    display:inline-block;
+    text-decoration: none;
+    color: $primary;
+}
+figure{
+    width: 100%;
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+// styling  the contianer containing all the grid items
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 3;
+    margin-top: 2rem;
+    gap: 2rem;
+    .grid-items{
+        background: #fff;
+    }
+}
+.grid-items{
+    padding: 1rem ;
+    a{
+        font-size: 1.3rem;
+        color: $secondary;
+    }
+    h2{
+        font-size: 1.7rem;
+    }
+    p{
+        font-size: 1.3rem;
+        margin:1rem 0 ;
+    }
+}
+.item-2{
+    grid-row:span 3;
+    display: grid;
+    figure{
+        align-self: center;
+        justify-content: center;
+        padding: 0 2rem;
+        img{
+            border-radius:100%;
+        }
+    }
+    a{
+        color: $secondary;
+    }
+}
+.item-3{
+    position: relative;
+    a{
+        position: absolute;
+        bottom: 0;
+        left: 0; 
+        width: 100%;
+        background: $secondary;
+        padding: 1rem;
+        color: #fff;
+    }
+}
+.item-4{
+    grid-row: span 2;
+    figure{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.item-5{
+    position: relative;
+      h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: .5rem;
+        background: $primary;
+        color: #fff;
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+    p{
+        position: relative;
+        top: 1rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .grid-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .item-2{
+        order: 1;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+    html{
+        font-size: 50%;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+    }
+    .item-1{
+        order: -3;
+    }
+    .item-4{
+        order: -2;
+    }
+    .item-2{
+        order: -1;
+    }
+}
